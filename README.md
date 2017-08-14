@@ -1,1 +1,5 @@
-# Traveling_Salesman_DynProgramming
+This class contains a dynamic programming algorithm for solving the TSP problem in O(n^2 * 2^n) time (as opposed to O(n!) via naive brute-force search).
+
+Given a text data file whose first line indicates the no. of cities in a 2-D plane and each successive line indicates the (x,y) coordinates of each city, and where the distance between each pair of cities is defined as the Euclidean distance (it is assumed that every pair of cities is connected via a straight path, AKA the text data file essentially represents a CLIQUE graph), this algorithm figures out the minimum cost of a Traveling Salesman tour (the minimum path length to start from the first city (city index 0), visit each city exactly once, and then come back to the starting city).
+
+To run, execute TSP.java along with one of the provided text files (e.g. tsp_BIG.txt) as the parameter. Note that this program can be resource intensive depending on the size of the data file, so you may want to allocate more memory (e.g. -Xmx4096m -Xms4096m -Xmn256m -Xss16m).
